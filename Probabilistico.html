@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probabilístico</title>
+    <link rel="stylesheet" href="css/probabilistico-styles.css">
+</head>
+<body>
+    <div class="container">
+        <span class="span-volver"><a href="index.html"><< volver</a></span>
+        <h1>Adivinación Probabilística</h1>
+        
+        <div class="secret-number">
+            Número secreto: <span id="secretNumberDisplay">?</span>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn">Iniciar Adivinación</button>
+            <button id="resetBtn">Reiniciar</button>
+        </div>
+        
+        <div class="number-grid" id="numberGrid">
+            <!-- Los números del 1 al 10 se generarán aquí -->
+        </div>
+        
+        <div class="output">
+            <div id="statusMessage">Presiona "Iniciar Adivinación" para comenzar</div>
+            <div class="attempt-log" id="attemptLog"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="js/adivinarNumero.js"></script>
+</html>

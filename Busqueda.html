@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+    <link rel="stylesheet" href="css/busqueda-styles.css">
+</head>
+<body>
+    <div class="container">
+    <span class="span-volver"><a href="index.html"><< volver</a></span>
+        <h1>Búsqueda Secuencial de Productos</h1>
+        
+        <div class="product-list" id="productList">
+            <!-- Los productos se insertarán aquí -->
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Ingresa un producto para buscar (ej. pan)">
+            <button onclick="buscarProducto()">Buscar</button>
+        </div>
+        
+        <div class="output" id="output">
+            <!-- Los resultados se mostrarán aquí -->
+        </div>
+    </div>
+
+</body>
+
+<script src="js/busquedaProducto.js"></script>
+</html>

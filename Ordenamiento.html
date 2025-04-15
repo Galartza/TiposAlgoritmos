@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenamiento</title>
+    <link rel="stylesheet" href="css/ordenamiento-styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="span-volver"><a href="index.html"><< volver</a></span>
+        <h1>Ordenamiento</h1>
+        
+        <div class="controls">
+            <button id="startBtn">Iniciar Ordenamiento</button>
+            <button id="resetBtn">Reiniciar</button>
+            <div class="speed-control">
+                <label for="speed">Velocidad:</label>
+                <input type="range" id="speed" min="100" max="1000" value="500" step="100">
+            </div>
+        </div>
+        
+        <div class="price-list" id="priceList">
+            <!-- Las barras de precios se insertarán aquí -->
+        </div>
+        
+        <div class="info-panel">
+            <div class="step-info" id="stepInfo">Presiona "Iniciar Ordenamiento" para comenzar</div>
+            <div id="algorithmInfo"></div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="js/ordenarPrecios.js"></script>
+</html>

@@ -1,0 +1,225 @@
+:root {
+    --color-normal: #4CAF50;
+    --color-current: #FFC107;
+    --color-sum: #2196F3;
+    --color-current-sum: #FF9800;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.span-volver {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.span-volver a {
+    color: var(--color-normal);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: var(--color-normal);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 120px;
+    transition: opacity 0.3s;
+}
+
+button:disabled {
+    background-color: #cccccc;
+}
+
+button:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.numbers-container {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.number-bar, .suma-bar {
+    width: 40px;
+    min-width: 40px;
+    background-color: var(--color-normal);
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.suma-bar {
+    background-color: var(--color-sum);
+    margin-top: 10px;
+}
+
+.number-bar span, .suma-bar span {
+    margin-bottom: 5px;
+    font-size: 12px;
+    word-break: break-all;
+    text-align: center;
+    padding: 0 2px;
+}
+
+.current {
+    background-color: var(--color-current) !important;
+}
+
+.current-sum {
+    background-color: var(--color-current-sum) !important;
+}
+
+.info-panel {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.step-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: clamp(14px, 3vw, 16px);
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.acumulativo-container {
+    display: flex;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .speed-control {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .number-bar, .suma-bar {
+        width: 30px;
+        min-width: 30px;
+    }
+    
+    .numbers-container {
+        height: 250px;
+    }
+}
+
+/* Estructura de pares número-suma */
+.number-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+    .number-bar, .suma-bar {
+        width: 30px !important;
+        min-width: 30px !important;
+    }
+    
+    .numbers-container {
+        gap: 5px;
+    }
+}
+
+/* Efectos visuales */
+.number-bar {
+    background-color: var(--color-normal);
+    transition: all 0.3s ease;
+}
+
+.suma-bar {
+    background-color: var(--color-sum);
+    transition: all 0.3s ease;
+}
+.span-volver a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voraz</title>
+    <link rel="stylesheet" href="css/voraz-styles.css">
+</head>
+<body>
+    <div class="container">
+        <span class="span-volver"><a href="index.html"><< volver</a></span>
+        <h1>Algoritmo Voraz para Dar Cambio</h1>
+        
+        <div class="controls">
+            <input type="number" id="amountInput" min="1" value="87" placeholder="Monto">
+            <button id="calculateBtn">Calcular Cambio</button>
+            <button id="resetBtn">Reiniciar</button>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <div class="step-info" id="stepInfo">
+            Ingrese un monto y presione "Calcular Cambio" para comenzar.
+        </div>
+        
+        <div class="remaining">
+            Monto restante: <span class="remaining-amount" id="remainingAmount">0</span>
+        </div>
+        
+        <div class="denominations" id="denominationsContainer">
+            <!-- Las denominaciones se insertarán aquí -->
+        </div>
+        
+        <div class="results" id="resultsContainer">
+            <h3>Resultado:</h3>
+            <div id="resultsList"></div>
+        </div>
+    </div>
+
+    
+
+</body>
+<script src="js/darCambio.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinista</title>
+    <link rel="stylesheet" href="css/determinista-styles.css">
+</head>
+<body>
+    <div class="container">
+        <span class="span-volver"><a href="index.html"><< volver</a></span>
+        <h1>Suma Acumulativa Determinista</h1>
+        
+        <div class="controls">
+            <button id="startBtn">Iniciar Suma</button>
+            <button id="resetBtn">Reiniciar</button>
+            <div class="speed-control">
+                <label for="speed">Velocidad:</label>
+                <input type="range" id="speed" min="100" max="1000" value="500" step="100">
+            </div>
+        </div>
+        
+        <div class="numbers-container" id="numbersContainer">
+            <!-- Barras se generarán dinámicamente -->
+        </div>
+        
+        <div class="info-panel">
+            <div class="step-info" id="stepInfo">Presiona "Iniciar Suma" para comenzar</div>
+            <div id="algorithmInfo"></div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--color-normal);"></div>
+                <span>Número original</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--color-current);"></div>
+                <span>Número actual</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--color-sum);"></div>
+                <span>Suma acumulada</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: var(--color-current-sum);"></div>
+                <span>Suma actual</span>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="js/sumaAcumulativa.js"></script>
+</html>

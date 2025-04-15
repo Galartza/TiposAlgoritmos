@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encaminamiento</title>
+    <link rel="stylesheet" href="css/encaminamiento-styles.css">
+</head>
+<body>
+    <div class="container">
+        <span class="span-volver"><a href="index.html"><< volver</a></span>
+        <h1>Encontrar la Ruta Más Corta</h1>
+        
+        <div class="controls">
+            <button id="startBtn">Iniciar Búsqueda</button>
+            <button id="resetBtn">Reiniciar</button>
+        </div>
+        
+        <div class="routes-container" id="routesContainer">
+            <!-- Las rutas se insertarán aquí -->
+        </div>
+        
+        <div class="output" id="output">
+            Presiona "Iniciar Búsqueda" para comenzar
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FFEB3B;"></div>
+                <span>Ruta siendo evaluada</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #4CAF50;"></div>
+                <span>Ruta más corta actual</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #2196F3;"></div>
+                <span>Ruta más corta final</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="js/encontrarRutaMasCorta.js"></script>
+</html>
